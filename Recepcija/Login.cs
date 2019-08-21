@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Recepcija
 {
@@ -17,9 +18,9 @@ namespace Recepcija
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void prijava (object sender, EventArgs e)
         {
-
+            var cnn = SqlStatic.GetSqlConnection();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
